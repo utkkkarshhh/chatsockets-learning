@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>ChatSocket</title>
+<link rel="stylesheet" href="styles.css"></link>
+</head>
+<body><section class="msger">
+  <header class="msger-header">
+    <div class="msger-header-title">
+      <i class="fas fa-comment-alt" id="room-name"> </i> 
+    </div>
+    <p id="users"></p>
+    <div class="msger-header-options">
+      <span><i class="fas fa-cog"></i></span>
+    </div>
+  </header>
+
+  <main class="msger-chat">
+
+  </main>
+
+
+  <form class="msger-inputarea" id="chatForm">
+    <input type="text" class="msger-input" id="message" placeholder="Enter your message...">
+    <button type="submit" class="msger-send-btn">Send</button>
+  </form>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.12.0/qs.min.js" integrity="sha512-7guIquo9is/MQs1wfLZyVViTlsvrIoHdnSzoFmPvPMDpqjL2fvDqcVKpaZ9PS3Sbf6DLBRUUZ5X3jcQ/wotWow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>
